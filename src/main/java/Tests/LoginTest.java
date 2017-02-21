@@ -34,6 +34,7 @@ public class LoginTest {
         loginObj.validateLoginUrl();
     }
 
+
     @Test
     public void updatedLoginFields() throws InterruptedException {
         loginObj = new LoginPage(loginDriver);
