@@ -36,7 +36,7 @@ public class LoginPage {
 
     public void verifyAndAddLoginIinfo(){
         if(driver.findElement(emailField).isDisplayed()){
-            driver.findElement(emailField).sendKeys("ofirdahan112@gmail.com");
+            driver.findElement(emailField).sendKeys("testSeleniumAccount123@gmail.com");
         }if(driver.findElement(passwordField).isDisplayed()){
             driver.findElement(passwordField).sendKeys("password");
         }
