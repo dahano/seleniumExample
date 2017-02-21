@@ -11,6 +11,7 @@ public class LoginPage {
     WebDriver driver;
 
     By loginLink = By.xpath("//html/body/header/div/div[1]/div/a");
+    By signUpLink = By.xpath("//html/body/header/div/nav/ul/li[7]/a");
     By loginButton = By.xpath("//html/body/div[1]/section/div/form/fieldset/div[4]/div/button");
     By emailField = By.xpath("//html/body/div[1]/section/div/form/fieldset/div[1]/input");
     By passwordField = By.xpath("//html/body/div[1]/section/div/form/fieldset/div[2]/input");
@@ -25,13 +26,17 @@ public class LoginPage {
         driver.findElement(loginLink).click();
     }
 
+    public void clickSignUpLink(){
+        driver.findElement(signUpLink).click();
+    }
+
     public void clickLoginButton(){
         driver.findElement(loginButton).click();
     }
 
 
-    public void validateLoginUrl() {
-        Assert.assertTrue(driver.getCurrentUrl().contains("login"));
+    public void validateLoginUrlcontains(String contains) {
+        Assert.assertTrue(driver.getCurrentUrl().contains(contains));
     }
 
     public void verifyAndAddLoginIinfo(){

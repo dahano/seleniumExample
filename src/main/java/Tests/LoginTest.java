@@ -27,11 +27,21 @@ public class LoginTest {
     }
 
     @Test
-    public void validateUrl() throws InterruptedException {
+    public void validateLoginUrlSet() throws InterruptedException {
         loginObj = new LoginPage(loginDriver);
         loginObj.clickLoginLink();
         Thread.sleep(2000);
-        loginObj.validateLoginUrl();
+        loginObj.validateLoginUrlcontains("login");
+        Assert.assertTrue(loginDriver.findElement(By.xpath("//html/body/div[1]/section/div/h1")).getText().contains("LOGIN"));
+    }
+
+    @Test
+    public void validateSignUpLinkUrl() throws InterruptedException {
+        loginObj = new LoginPage(loginDriver);
+        loginObj.clickSignUpLink();
+        Thread.sleep(2000);
+        loginObj.validateLoginUrlcontains("register");
+        Assert.assertTrue(loginDriver.findElement(By.xpath("//html/body/div[1]/section[2]/div[1]/h2")).getText().contains("SIGN UP"));
     }
 
 
