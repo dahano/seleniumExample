@@ -19,32 +19,26 @@ public class TestSetup {
     @BeforeSuite
     public void setUpDefault() throws IOException {
         setBrowser();
-        driver = new FirefoxDriver();
-//        driver = new ChromeDriver();
-        driver.get("https://www.headspace.com");
-    }
 
-    @BeforeTest
-    public void setup(){
-        String path = "/Applications/Firefox.app/Contents/MacOS/geckodriver";
-        System.setProperty("webdriver.gecko.driver", path);
         driver = new FirefoxDriver();
         driver.get("https://www.headspace.com");
+
+        /*To Set Up Chrome Driver uncomment this out for now
+        driver = new ChromeDriver();*/
+
     }
 
 
     private void setBrowser() {
         String userdir = System.getProperty("user.dir");
-        String path = "/Applications/Firefox.app/Contents/MacOS/geckodriver";
+        String path = "./src/main/resources/geckodriver";
         System.setProperty("webdriver.gecko.driver", path);
-        //String path = "/Users/ofirdahan/chromedriver";
-        //System.setProperty("webdriver.chrome.driver", path);
+
+        /*To Set Up Chrome Driver uncomment this out for now
+        String path = "/Users/ofirdahan/chromedriver";
+        System.setProperty("webdriver.chrome.driver", path);*/
     }
 
-    @AfterTest
-    public void testTearDown() {
-        driver.quit();
-    }
 
     @AfterSuite
     public void suiteTearDown() {
