@@ -1,4 +1,4 @@
-# seleniumExample
+# Selenium Example using both Firefox Webdriver and Chrome Webdriver
 
  - This Selenium test-suite uses the Page Object Model (POM) pattern.
  - If you plan on pulling this project down, please checkout the TestSetup and configure your webdriver(s) appropriately. 
