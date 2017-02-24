@@ -10,18 +10,16 @@ import org.testng.annotations.BeforeTest;
 
 import java.io.IOException;
 
-
 public class TestSetup {
 
     public static WebDriver driver;
-
+    public String baseUrl = "https://www.headspace.com";
 
     @BeforeSuite
     public void setUpDefault() throws IOException {
         setBrowser();
-
         driver = new FirefoxDriver();
-        driver.get("https://www.headspace.com");
+        driver.get(baseUrl);
 
         /*To Set Up Chrome Driver uncomment this out for now
         driver = new ChromeDriver();*/

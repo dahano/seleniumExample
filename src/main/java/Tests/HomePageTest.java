@@ -2,13 +2,20 @@ package Tests;
 
 import CommonObjects.TestSetup;
 import Pages.HomePage;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by ofirdahan on 2/20/17.
@@ -23,6 +30,23 @@ public class HomePageTest extends TestSetup{
         homeObj = new HomePage(driver);
         homeObj.isNavigationDisplayed();
         homeObj.isSocialMediaLinksDisplayed();
+    }
+
+    @Test
+    public void verifyNavigationLinks(){
+        WebElement navList = driver.findElement(By.className("primary-nav"));
+
+        List<WebElement> navigationLinks = navList.findElements(By.tagName("li"));
+
+        List<String> expectedNavLinks = Arrays.asList("HOW IT WORKS", "THE SCIENCE", "WORKPLACE", "BLOG", "HELP", "SUBSCRIPTIONS", "SIGN UP FOR FREE");
+        List<String> navigationLinksOnPage = new ArrayList<String>();
+
+        for(WebElement navLinks : navigationLinks){
+            navigationLinksOnPage.add(navLinks.getText());
+        }
+
+        Assert.assertTrue(expectedNavLinks.containsAll(navigationLinksOnPage) && navigationLinksOnPage.containsAll(expectedNavLinks));
+
     }
 
     @Test
