@@ -5,11 +5,10 @@ import Pages.HomePage;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeTest;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
@@ -23,6 +22,7 @@ import java.util.concurrent.TimeUnit;
 
 public class HomePageTest extends TestSetup{
     HomePage homeObj;
+    Wait wait;
 
     @Test
     public void verifyLinks() throws InterruptedException {
@@ -53,6 +53,8 @@ public class HomePageTest extends TestSetup{
     public void playTutorialVideo() throws InterruptedException {
         homeObj = new HomePage(driver);
         homeObj.playTutorialVideo();
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        Assert.assertTrue(driver.findElement(By.className("responsive-video")).isDisplayed());
     }
 
 }

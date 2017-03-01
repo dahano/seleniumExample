@@ -33,7 +33,7 @@ public class TestSetup {
         System.setProperty("webdriver.gecko.driver", path);
 
         /*To Set Up Chrome Driver uncomment this out for now
-        String path = "/Users/ofirdahan/chromedriver";
+        String path = "/PATH/TO/chromedriver";
         System.setProperty("webdriver.chrome.driver", path);*/
     }
 
