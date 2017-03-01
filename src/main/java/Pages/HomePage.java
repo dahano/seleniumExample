@@ -1,5 +1,6 @@
 package Pages;
 
+import CommonObjects.TestSetup;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -8,7 +9,7 @@ import org.testng.Assert;
 /**
  * Created by ofirdahan on 2/20/17.
  */
-public class HomePage {
+public class HomePage extends TestSetup{
     WebDriver driver;
     WebDriverWait wait;
 

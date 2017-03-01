@@ -7,6 +7,7 @@ import org.testng.Assert;
 /**
  * Created by ofirdahan on 2/20/17.
  */
+
 public class LoginPage {
     WebDriver driver;
 

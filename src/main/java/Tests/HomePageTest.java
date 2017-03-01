@@ -21,8 +21,8 @@ import java.util.concurrent.TimeUnit;
  */
 
 public class HomePageTest extends TestSetup{
+
     HomePage homeObj;
-    Wait wait;
 
     @Test
     public void verifyLinks() throws InterruptedException {
@@ -38,7 +38,7 @@ public class HomePageTest extends TestSetup{
 
         List<WebElement> navigationLinks = navList.findElements(By.tagName("li"));
 
-        List<String> expectedNavLinks = Arrays.asList("HOW IT WORKS", "THE SCIENCE", "WORKPLACE", "BLOG", "HELP", "SUBSCRIPTIONS", "SIGN UP FOR FREE");
+        List<String> expectedNavLinks = Arrays.asList("HOW IT WORKS", "THE SCIENCE", "AT WORK", "BLOG", "HELP", "SUBSCRIPTIONS", "SIGN UP FOR FREE");
         List<String> navigationLinksOnPage = new ArrayList<String>();
 
         for(WebElement navLinks : navigationLinks){
