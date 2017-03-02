@@ -45,6 +45,9 @@
                         <parallel>methods</parallel>
                         <threadCount>3</threadCount>
                         <runOrder>random</runOrder>
+                        <suiteXmlFiles>
+                            <file>testNG.xml</file>
+                        </suiteXmlFiles>
                     </configuration>
                 </plugin>
             </plugins>

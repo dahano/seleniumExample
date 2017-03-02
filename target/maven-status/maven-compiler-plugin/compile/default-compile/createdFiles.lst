@@ -1,0 +1,7 @@
+CommonObjects/TestSetup.class
+Tests/HomePageTest.class
+Tests/LoginTest.class
+CommonObjects/ButtonsAndLinks.class
+Pages/HomePage.class
+Pages/LoginPage.class
+Tests/HerokuAppTest.class
