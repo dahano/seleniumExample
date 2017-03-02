@@ -1,29 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="2" total="7" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="729" started-at="2017-03-02T00:38:12Z" finished-at="2017-03-02T00:38:12Z">
+  <suite name="Suite1" duration-ms="3187" started-at="2017-03-02T02:05:19Z" finished-at="2017-03-02T02:05:22Z">
     <groups>
     </groups>
-    <test name="HomePage" duration-ms="729" started-at="2017-03-02T00:38:12Z" finished-at="2017-03-02T00:38:12Z">
+    <test name="HomePage" duration-ms="3187" started-at="2017-03-02T02:05:19Z" finished-at="2017-03-02T02:05:22Z">
+      <class name="Tests.HerokuAppTest">
+        <test-method status="PASS" signature="JavaScriptAlert()[pri:0, instance:Tests.HerokuAppTest@35f983a6]" name="JavaScriptAlert" duration-ms="1852" started-at="2017-03-01T18:05:20Z" finished-at="2017-03-01T18:05:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JavaScriptAlert -->
+        <test-method status="PASS" signature="multipleWindows()[pri:0, instance:Tests.HerokuAppTest@35f983a6]" name="multipleWindows" duration-ms="766" started-at="2017-03-01T18:05:21Z" finished-at="2017-03-01T18:05:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multipleWindows -->
+      </class> <!-- Tests.HerokuAppTest -->
       <class name="Tests.HomePageTest">
-        <test-method status="PASS" signature="setUpDefault()[pri:0, instance:Tests.HomePageTest@96532d6]" name="setUpDefault" is-config="true" duration-ms="6363" started-at="2017-03-01T16:38:05Z" finished-at="2017-03-01T16:38:12Z">
+        <test-method status="PASS" signature="setUpDefault()[pri:0, instance:Tests.HomePageTest@60f82f98]" name="setUpDefault" is-config="true" duration-ms="6849" started-at="2017-03-01T18:05:12Z" finished-at="2017-03-01T18:05:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDefault -->
-        <test-method status="PASS" signature="playTutorialVideo()[pri:0, instance:Tests.HomePageTest@96532d6]" name="playTutorialVideo" duration-ms="286" started-at="2017-03-01T16:38:12Z" finished-at="2017-03-01T16:38:12Z">
+        <test-method status="PASS" signature="playTutorialVideo()[pri:0, instance:Tests.HomePageTest@60f82f98]" name="playTutorialVideo" duration-ms="291" started-at="2017-03-01T18:05:19Z" finished-at="2017-03-01T18:05:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- playTutorialVideo -->
-        <test-method status="PASS" signature="verifyLinks()[pri:0, instance:Tests.HomePageTest@96532d6]" name="verifyLinks" duration-ms="215" started-at="2017-03-01T16:38:12Z" finished-at="2017-03-01T16:38:12Z">
+        <test-method status="PASS" signature="verifyLinks()[pri:0, instance:Tests.HomePageTest@60f82f98]" name="verifyLinks" duration-ms="88" started-at="2017-03-01T18:05:19Z" finished-at="2017-03-01T18:05:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLinks -->
-        <test-method status="PASS" signature="verifyNavigationLinks()[pri:0, instance:Tests.HomePageTest@96532d6]" name="verifyNavigationLinks" duration-ms="215" started-at="2017-03-01T16:38:12Z" finished-at="2017-03-01T16:38:12Z">
+        <test-method status="PASS" signature="verifyNavigationLinks()[pri:0, instance:Tests.HomePageTest@60f82f98]" name="verifyNavigationLinks" duration-ms="176" started-at="2017-03-01T18:05:19Z" finished-at="2017-03-01T18:05:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNavigationLinks -->
-        <test-method status="PASS" signature="suiteTearDown()[pri:0, instance:Tests.HomePageTest@96532d6]" name="suiteTearDown" is-config="true" duration-ms="166" started-at="2017-03-01T16:38:13Z" finished-at="2017-03-01T16:38:13Z">
+        <test-method status="PASS" signature="suiteTearDown()[pri:0, instance:Tests.HomePageTest@60f82f98]" name="suiteTearDown" is-config="true" duration-ms="171" started-at="2017-03-01T18:05:22Z" finished-at="2017-03-01T18:05:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- suiteTearDown -->

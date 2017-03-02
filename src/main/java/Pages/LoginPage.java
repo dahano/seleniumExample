@@ -37,7 +37,7 @@ public class LoginPage {
 
 
     public void validateLoginUrlcontains(String contains) {
-        Assert.assertTrue(driver.getCurrentUrl().contains(contains));
+        driver.getCurrentUrl().contains(contains);
     }
 
     public void verifyAndAddLoginIinfo(){

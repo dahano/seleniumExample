@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,6 +100,16 @@
                       <a href="#" panel-name="suite-Suite1" class="show-methods passed suite-Suite1"> (show)</a> <!-- show-methods passed suite-Suite1 -->
                     </span>
                     <div class="method-list-content passed suite-Suite1">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="Tests.HerokuAppTest" hash-for-method="JavaScriptAlert">JavaScriptAlert</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="Tests.HerokuAppTest" hash-for-method="multipleWindows">multipleWindows</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="Tests.HomePageTest" hash-for-method="playTutorialVideo">playTutorialVideo</a> <!-- method navigator-link -->
@@ -127,6 +137,28 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite1" class="panel Suite1">
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Tests.HerokuAppTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="JavaScriptAlert">
+                  </a> <!-- JavaScriptAlert -->
+                  <span class="method-name">JavaScriptAlert</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="multipleWindows">
+                  </a> <!-- multipleWindows -->
+                  <span class="method-name">multipleWindows</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
           <div class="suite-Suite1-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -169,6 +201,7 @@
   &lt;test name=&quot;HomePage&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Tests.HomePageTest&quot;/&gt;
+      &lt;class name=&quot;Tests.HerokuAppTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- HomePage --&gt;
 &lt;/suite&gt; &lt;!-- Suite1 --&gt;
@@ -182,7 +215,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">HomePage (1 class)</span>
+                <span class="test-name">HomePage (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -208,24 +241,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'playTutorialVideo')
-data.setCell(0, 2, 'Tests.HomePageTest')
-data.setCell(0, 3, 286);
+data.setCell(0, 1, 'JavaScriptAlert')
+data.setCell(0, 2, 'Tests.HerokuAppTest')
+data.setCell(0, 3, 1852);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyNavigationLinks')
-data.setCell(1, 2, 'Tests.HomePageTest')
-data.setCell(1, 3, 215);
+data.setCell(1, 1, 'multipleWindows')
+data.setCell(1, 2, 'Tests.HerokuAppTest')
+data.setCell(1, 3, 766);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyLinks')
+data.setCell(2, 1, 'playTutorialVideo')
 data.setCell(2, 2, 'Tests.HomePageTest')
-data.setCell(2, 3, 215);
+data.setCell(2, 3, 291);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyNavigationLinks')
+data.setCell(3, 2, 'Tests.HomePageTest')
+data.setCell(3, 3, 176);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyLinks')
+data.setCell(4, 2, 'Tests.HomePageTest')
+data.setCell(4, 3, 88);
 window.suiteTableData['Suite1']= { tableData: data, tableDiv: 'times-div-Suite1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 716 ms</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Suite1">
               </div> <!-- times-div-Suite1 -->
             </div> <!-- times-div -->
@@ -240,9 +281,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite1" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Tests.HerokuAppTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUpDefault</span>
+                <br/>
+                <span class="ignored-method-name">suiteTearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite1" class="panel">
@@ -258,19 +308,33 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">playTutorialVideo</span>
-                <span class="method-start">6374 ms</span>
+                <span class="method-start">6859 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyLinks</span>
-                <span class="method-start">6660 ms</span>
+                <span class="method-start">7150 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyNavigationLinks</span>
-                <span class="method-start">6875 ms</span>
+                <span class="method-start">7239 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.HerokuAppTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">JavaScriptAlert</span>
+                <span class="method-start">7416 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">multipleWindows</span>
+                <span class="method-start">9269 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">suiteTearDown</span>
-                <span class="method-start">7381 ms</span>
+                <span class="method-start">10068 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

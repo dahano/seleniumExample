@@ -4,6 +4,8 @@
     <test name="HomePage" >
         <classes>
             <class name="Tests.HomePageTest" />
+
+            <class name="Tests.HerokuAppTest"/>
         </classes>
     </test>
 
