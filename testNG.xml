@@ -3,9 +3,7 @@
 <suite name="Suite1" verbose="1" >
     <test name="HomePage" >
         <classes>
-            <class name="Tests.HomePageTest" />
-
-            <class name="Tests.HerokuAppTest"/>
+            <class name="Tests.LoginTest"/>
         </classes>
     </test>
 

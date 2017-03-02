@@ -21,7 +21,7 @@ public class LoginTest extends TestSetup {
     public void validateLoginUrlSet() throws InterruptedException {
         loginObj = new LoginPage(driver);
         loginObj.clickLoginLink();
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         loginObj.validateLoginUrlcontains("login");
         Assert.assertTrue(driver.findElement(By.xpath("//html/body/div[1]/section/div/h1")).getText().contains("LOGIN"));
     }
@@ -30,7 +30,7 @@ public class LoginTest extends TestSetup {
     public void validateSignUpLinkUrl() throws InterruptedException {
         loginObj = new LoginPage(driver);
         loginObj.clickSignUpLink();
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         loginObj.validateLoginUrlcontains("register");
         Assert.assertTrue(driver.findElement(By.xpath("//html/body/div[1]/section[2]/div[1]/h2")).getText().contains("SIGN UP"));
     }
@@ -40,10 +40,10 @@ public class LoginTest extends TestSetup {
     public void updatedLoginFields() throws InterruptedException {
         loginObj = new LoginPage(driver);
         loginObj.clickLoginLink();
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         loginObj.verifyAndAddLoginIinfo();
         loginObj.clickLoginButton();
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         Assert.assertTrue(driver.findElement(By.xpath("//html/body/div[1]/section/div/form/fieldset/div[1]/p")).getText().contains(invalidLoginMessage));
     }
 

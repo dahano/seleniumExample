@@ -18,23 +18,22 @@ public class TestSetup {
     @BeforeSuite
     public void setUpDefault() throws IOException {
         setBrowser();
-        driver = new FirefoxDriver();
+        /*driver = new FirefoxDriver();*/
+        driver = new ChromeDriver();
         driver.get(baseUrl);
 
-        /*To Set Up Chrome Driver uncomment this out for now
-        driver = new ChromeDriver();*/
 
     }
 
 
     private void setBrowser() {
-        String userdir = System.getProperty("user.dir");
-        String path = "./src/main/resources/geckodriver";
-        System.setProperty("webdriver.gecko.driver", path);
+        //String userdir = System.getProperty("user.dir");
+        /*String path = "./src/main/resources/geckodriver";
+        System.setProperty("webdriver.gecko.driver", path);*/
 
-        /*To Set Up Chrome Driver uncomment this out for now
-        String path = "/PATH/TO/chromedriver";
-        System.setProperty("webdriver.chrome.driver", path);*/
+        /*To Set Up Chrome Driver uncomment this out for now*/
+        String path = "./src/main/resources/chromedriver";
+        System.setProperty("webdriver.chrome.driver", path);
     }
 
 
