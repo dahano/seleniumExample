@@ -1,7 +1,8 @@
-CommonObjects/TestSetup.class
 Tests/HomePageTest.class
 Tests/LoginTest.class
-CommonObjects/ButtonsAndLinks.class
+BaseTestSetup/RetryLlistener.class
 Pages/HomePage.class
+BaseTestSetup/TestSetup.class
+BaseTestSetup/Retry.class
 Pages/LoginPage.class
 Tests/HerokuAppTest.class

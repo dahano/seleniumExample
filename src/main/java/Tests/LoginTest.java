@@ -1,6 +1,6 @@
 package Tests;
 
-import CommonObjects.TestSetup;
+import BaseTestSetup.TestSetup;
 import Pages.LoginPage;
 import org.openqa.selenium.By;
 import org.testng.Assert;

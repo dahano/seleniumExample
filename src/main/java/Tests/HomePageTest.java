@@ -1,14 +1,10 @@
 package Tests;
 
-import CommonObjects.TestSetup;
+import BaseTestSetup.TestSetup;
 import Pages.HomePage;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Wait;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
@@ -32,6 +28,7 @@ public class HomePageTest extends TestSetup{
         homeObj.isSocialMediaLinksDisplayed();
     }
 
+
     @Test
     public void verifyNavigationLinks(){
         WebElement navList = driver.findElement(By.className("primary-nav"));
@@ -49,12 +46,5 @@ public class HomePageTest extends TestSetup{
 
     }
 
-    @Test
-    public void playTutorialVideo() throws InterruptedException {
-        homeObj = new HomePage(driver);
-        homeObj.playTutorialVideo();
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        Assert.assertTrue(driver.findElement(By.className("responsive-video")).isDisplayed());
-    }
 
 }

@@ -1,6 +1,6 @@
 package Pages;
 
-import CommonObjects.TestSetup;
+import BaseTestSetup.TestSetup;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -16,7 +16,6 @@ public class HomePage extends TestSetup{
     By navigation = By.xpath("//html/body/header/div/nav");
     By socialMediaLinks = By.xpath("//html/body/footer/div[1]/ul");
     By redeemCodeLink = By.xpath("//html/body/header/div/div[1]/div/span/a");
-    By tutorialVideolink = By.xpath("//html/body/div[2]/section[5]/div/div/div[1]/h3/a");
     By iFrameTutorialVideo = By.xpath("//html/body/div[5]/div/div/div[2]/div/iframe");
 
     public HomePage(WebDriver driver){
@@ -31,10 +30,6 @@ public class HomePage extends TestSetup{
         return driver.findElement(socialMediaLinks).isDisplayed();
     }
 
-
-    public void playTutorialVideo() {
-        driver.findElement(tutorialVideolink).click();
-    }
 
     public void clickRedeemCodeLink(){
         driver.findElement(redeemCodeLink).click();

@@ -1,6 +1,6 @@
 package Tests;
 
-import CommonObjects.TestSetup;
+import BaseTestSetup.TestSetup;
 import org.hamcrest.MatcherAssert;
 import org.junit.Assert;
 import org.openqa.selenium.Alert;
