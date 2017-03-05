@@ -28,6 +28,15 @@ public class HomePageTest extends TestSetup{
         homeObj.isSocialMediaLinksDisplayed();
     }
 
+    @Test
+    public void redeemCodeLink(){
+        homeObj = new HomePage(driver);
+
+        homeObj.clickRedeemCodeLink();
+
+        Assert.assertTrue(driver.getCurrentUrl().equalsIgnoreCase("https://www.headspace.com/code"));
+    }
+
 
     @Test
     public void verifyNavigationLinks(){

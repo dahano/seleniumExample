@@ -35,8 +35,5 @@ public class HomePage extends TestSetup{
         driver.findElement(redeemCodeLink).click();
     }
 
-    public void isTutorialVideoDisplayed(){
-        Assert.assertTrue(driver.findElement(iFrameTutorialVideo).isDisplayed());
-    }
 
 }

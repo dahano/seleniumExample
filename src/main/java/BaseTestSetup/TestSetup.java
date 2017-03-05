@@ -25,11 +25,11 @@ public class TestSetup {
 
 
     private void setBrowser() {
-        //String userdir = System.getProperty("user.dir");
+        //GECKO DRIVER
         /*String path = "./src/main/resources/geckodriver";
         System.setProperty("webdriver.gecko.driver", path);*/
 
-        /*To Set Up Chrome Driver uncomment this out for now*/
+        //CHROME DRIVER
         String path = "./src/main/resources/chromedriver";
         System.setProperty("webdriver.chrome.driver", path);
     }
