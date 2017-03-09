@@ -52,8 +52,5 @@ public class HomePageTest extends TestSetup{
         }
 
         Assert.assertTrue(expectedNavLinks.containsAll(navigationLinksOnPage) && navigationLinksOnPage.containsAll(expectedNavLinks));
-
     }
-
-
 }

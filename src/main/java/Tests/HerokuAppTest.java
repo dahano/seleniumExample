@@ -6,6 +6,10 @@ import org.junit.Assert;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.security.Credentials;
+import org.openqa.selenium.security.UserAndPassword;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import java.util.List;
@@ -66,6 +70,15 @@ public class HerokuAppTest extends TestSetup {
         submitButton.click();
 
         Assert.assertTrue(driver.getCurrentUrl().equalsIgnoreCase("http://the-internet.herokuapp.com/email_sent"));
+    }
+
+    @Test
+    public void testBasicAuth() {
+        //passing username:password for page through the URL since Selenium Web-Driver doesn't exactly
+        //have a clean way of handling this type of Auth Alert.
+        driver.get("http://admin:admin@the-internet.herokuapp.com/basic_auth");
+        WebElement welcomeBanner = driver.findElement(By.xpath("//*[@id=\"content\"]/div/p"));
+        Assert.assertTrue(welcomeBanner.isDisplayed());
     }
 
 

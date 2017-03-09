@@ -2,6 +2,7 @@ package BaseTestSetup;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -16,8 +17,8 @@ public class TestSetup {
     @BeforeSuite
     public void setUpDefault() throws IOException {
         setBrowser();
-        /*driver = new FirefoxDriver();*/
-        driver = new ChromeDriver();
+        driver = new FirefoxDriver();
+        //driver = new ChromeDriver();
         driver.get(baseUrl);
 
 
@@ -26,12 +27,12 @@ public class TestSetup {
 
     private void setBrowser() {
         //GECKO DRIVER
-        /*String path = "./src/main/resources/geckodriver";
-        System.setProperty("webdriver.gecko.driver", path);*/
+        String path = "./src/main/resources/geckodriver";
+        System.setProperty("webdriver.gecko.driver", path);
 
         //CHROME DRIVER
-        String path = "./src/main/resources/chromedriver";
-        System.setProperty("webdriver.chrome.driver", path);
+        /*String path = "./src/main/resources/chromedriver";
+        System.setProperty("webdriver.chrome.driver", path);*/
     }
 
 

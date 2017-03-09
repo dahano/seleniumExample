@@ -2,60 +2,60 @@
 <testng-results skipped="0" failed="0" ignored="4" total="14" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Not Logged In" duration-ms="13334" started-at="2017-03-05T23:44:37Z" finished-at="2017-03-05T23:44:50Z">
+  <suite name="Not Logged In" duration-ms="7676" started-at="2017-03-07T16:03:00Z" finished-at="2017-03-07T16:03:08Z">
     <groups>
     </groups>
-    <test name="Pages" duration-ms="13334" started-at="2017-03-05T23:44:37Z" finished-at="2017-03-05T23:44:50Z">
+    <test name="Pages" duration-ms="7676" started-at="2017-03-07T16:03:00Z" finished-at="2017-03-07T16:03:08Z">
       <class name="Tests.HerokuAppTest">
-        <test-method status="PASS" signature="JavaScriptAlert()[pri:0, instance:Tests.HerokuAppTest@566776ad]" name="JavaScriptAlert" duration-ms="1568" started-at="2017-03-05T15:44:46Z" finished-at="2017-03-05T15:44:48Z">
+        <test-method status="PASS" signature="JavaScriptAlert()[pri:0, instance:Tests.HerokuAppTest@2f7a2457]" name="JavaScriptAlert" duration-ms="1717" started-at="2017-03-07T08:03:04Z" finished-at="2017-03-07T08:03:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- JavaScriptAlert -->
-        <test-method status="PASS" signature="forgotPasswordSendPassword()[pri:0, instance:Tests.HerokuAppTest@566776ad]" name="forgotPasswordSendPassword" duration-ms="1384" started-at="2017-03-05T15:44:48Z" finished-at="2017-03-05T15:44:49Z">
+        <test-method status="PASS" signature="forgotPasswordSendPassword()[pri:0, instance:Tests.HerokuAppTest@2f7a2457]" name="forgotPasswordSendPassword" duration-ms="1001" started-at="2017-03-07T08:03:06Z" finished-at="2017-03-07T08:03:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- forgotPasswordSendPassword -->
-        <test-method status="PASS" signature="multipleWindows()[pri:0, instance:Tests.HerokuAppTest@566776ad]" name="multipleWindows" duration-ms="472" started-at="2017-03-05T15:44:49Z" finished-at="2017-03-05T15:44:50Z">
+        <test-method status="PASS" signature="multipleWindows()[pri:0, instance:Tests.HerokuAppTest@2f7a2457]" name="multipleWindows" duration-ms="496" started-at="2017-03-07T08:03:07Z" finished-at="2017-03-07T08:03:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- multipleWindows -->
-        <test-method status="PASS" signature="verifyCheckboxes()[pri:0, instance:Tests.HerokuAppTest@566776ad]" name="verifyCheckboxes" duration-ms="338" started-at="2017-03-05T15:44:50Z" finished-at="2017-03-05T15:44:50Z">
+        <test-method status="PASS" signature="verifyCheckboxes()[pri:0, instance:Tests.HerokuAppTest@2f7a2457]" name="verifyCheckboxes" duration-ms="310" started-at="2017-03-07T08:03:08Z" finished-at="2017-03-07T08:03:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCheckboxes -->
       </class> <!-- Tests.HerokuAppTest -->
       <class name="Tests.HomePageTest">
-        <test-method status="PASS" signature="redeemCodeLink()[pri:0, instance:Tests.HomePageTest@2f7a2457]" name="redeemCodeLink" duration-ms="1205" started-at="2017-03-05T15:44:45Z" finished-at="2017-03-05T15:44:46Z">
+        <test-method status="PASS" signature="redeemCodeLink()[pri:0, instance:Tests.HomePageTest@edf4efb]" name="redeemCodeLink" duration-ms="725" started-at="2017-03-07T08:03:03Z" finished-at="2017-03-07T08:03:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- redeemCodeLink -->
-        <test-method status="PASS" signature="verifyLinks()[pri:0, instance:Tests.HomePageTest@2f7a2457]" name="verifyLinks" duration-ms="80" started-at="2017-03-05T15:44:46Z" finished-at="2017-03-05T15:44:46Z">
+        <test-method status="PASS" signature="verifyLinks()[pri:0, instance:Tests.HomePageTest@edf4efb]" name="verifyLinks" duration-ms="71" started-at="2017-03-07T08:03:04Z" finished-at="2017-03-07T08:03:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLinks -->
-        <test-method status="PASS" signature="verifyNavigationLinks()[pri:0, instance:Tests.HomePageTest@2f7a2457]" name="verifyNavigationLinks" duration-ms="224" started-at="2017-03-05T15:44:46Z" finished-at="2017-03-05T15:44:46Z">
+        <test-method status="PASS" signature="verifyNavigationLinks()[pri:0, instance:Tests.HomePageTest@edf4efb]" name="verifyNavigationLinks" duration-ms="196" started-at="2017-03-07T08:03:04Z" finished-at="2017-03-07T08:03:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNavigationLinks -->
       </class> <!-- Tests.HomePageTest -->
       <class name="Tests.LoginTest">
-        <test-method status="PASS" signature="setUpDefault()[pri:0, instance:Tests.LoginTest@edf4efb]" name="setUpDefault" is-config="true" duration-ms="3306" started-at="2017-03-05T15:44:33Z" finished-at="2017-03-05T15:44:37Z">
+        <test-method status="PASS" signature="setUpDefault()[pri:0, instance:Tests.LoginTest@7f690630]" name="setUpDefault" is-config="true" duration-ms="4087" started-at="2017-03-07T08:02:56Z" finished-at="2017-03-07T08:03:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDefault -->
-        <test-method status="PASS" signature="updatedLoginFields()[pri:0, instance:Tests.LoginTest@edf4efb]" name="updatedLoginFields" duration-ms="4350" started-at="2017-03-05T15:44:37Z" finished-at="2017-03-05T15:44:41Z">
+        <test-method status="PASS" signature="updatedLoginFields()[pri:0, instance:Tests.LoginTest@7f690630]" name="updatedLoginFields" duration-ms="1617" started-at="2017-03-07T08:03:00Z" finished-at="2017-03-07T08:03:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updatedLoginFields -->
-        <test-method status="PASS" signature="validateLoginUrlSet()[pri:0, instance:Tests.LoginTest@edf4efb]" name="validateLoginUrlSet" duration-ms="1077" started-at="2017-03-05T15:44:41Z" finished-at="2017-03-05T15:44:42Z">
+        <test-method status="PASS" signature="validateLoginUrlSet()[pri:0, instance:Tests.LoginTest@7f690630]" name="validateLoginUrlSet" duration-ms="904" started-at="2017-03-07T08:03:02Z" finished-at="2017-03-07T08:03:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateLoginUrlSet -->
-        <test-method status="PASS" signature="validateSignUpLinkUrl()[pri:0, instance:Tests.LoginTest@edf4efb]" name="validateSignUpLinkUrl" duration-ms="2623" started-at="2017-03-05T15:44:42Z" finished-at="2017-03-05T15:44:45Z">
+        <test-method status="PASS" signature="validateSignUpLinkUrl()[pri:0, instance:Tests.LoginTest@7f690630]" name="validateSignUpLinkUrl" duration-ms="620" started-at="2017-03-07T08:03:03Z" finished-at="2017-03-07T08:03:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateSignUpLinkUrl -->
-        <test-method status="PASS" signature="suiteTearDown()[pri:0, instance:Tests.LoginTest@edf4efb]" name="suiteTearDown" is-config="true" duration-ms="79" started-at="2017-03-05T15:44:50Z" finished-at="2017-03-05T15:44:50Z">
+        <test-method status="PASS" signature="suiteTearDown()[pri:0, instance:Tests.LoginTest@7f690630]" name="suiteTearDown" is-config="true" duration-ms="92" started-at="2017-03-07T08:03:13Z" finished-at="2017-03-07T08:03:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- suiteTearDown -->
