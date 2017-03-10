@@ -13,6 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.not;
@@ -60,7 +61,7 @@ public class HerokuAppTest extends TestSetup {
     }
 
     @Test
-    public void forgotPasswordSendPassword(){
+    public void forgotPasswordSendPassword() throws InterruptedException {
         driver.get(baseUrl+"forgot_password");
         WebElement emailField = driver.findElement(By.cssSelector("input[name=\"email\"]"));
         WebElement submitButton = driver.findElement(By.cssSelector("button[id=\"form_submit\"]"));
@@ -68,7 +69,8 @@ public class HerokuAppTest extends TestSetup {
         emailField.clear();
         emailField.sendKeys("testEmail123@gmail.com");
         submitButton.click();
-
+        driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
+        System.out.println(driver.getCurrentUrl());
         Assert.assertTrue(driver.getCurrentUrl().equalsIgnoreCase("http://the-internet.herokuapp.com/email_sent"));
     }
 

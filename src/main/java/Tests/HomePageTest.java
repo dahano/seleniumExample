@@ -29,12 +29,11 @@ public class HomePageTest extends TestSetup{
     }
 
     @Test
-    public void redeemCodeLink(){
+    public void redeemCodeLink() throws InterruptedException {
         homeObj = new HomePage(driver);
-
         homeObj.clickRedeemCodeLink();
-
-        Assert.assertTrue(driver.getCurrentUrl().equalsIgnoreCase("https://www.headspace.com/code"));
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        homeObj.redeemCodeTitleIsDisplayed();
     }
 
 

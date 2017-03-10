@@ -16,7 +16,7 @@ public class HomePage extends TestSetup{
     By navigation = By.xpath("//html/body/header/div/nav");
     By socialMediaLinks = By.xpath("//html/body/footer/div[1]/ul");
     By redeemCodeLink = By.xpath("//html/body/header/div/div[1]/div/span/a");
-    By iFrameTutorialVideo = By.xpath("//html/body/div[5]/div/div/div[2]/div/iframe");
+    By redeemCodeTitle = By.cssSelector(".module-title");
 
     public HomePage(WebDriver driver){
         this.driver = driver;
@@ -30,9 +30,12 @@ public class HomePage extends TestSetup{
         return driver.findElement(socialMediaLinks).isDisplayed();
     }
 
-
     public void clickRedeemCodeLink(){
         driver.findElement(redeemCodeLink).click();
+    }
+
+    public boolean redeemCodeTitleIsDisplayed(){
+       return driver.findElement(redeemCodeTitle).getText().contains("REDEEM CODE");
     }
 
 
